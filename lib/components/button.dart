@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
   final String text;
-  const Button({required this.text, super.key});
+  final bool big;
+  const Button({required this.text, this.big = false, super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: () {}, child: Text(text));
+    return Expanded(
+        flex: big ? 2 : 1,
+        child: ElevatedButton(onPressed: () {}, child: Text(text)));
   }
 }
