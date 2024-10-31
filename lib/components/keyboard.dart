@@ -16,10 +16,12 @@ class Keyboard extends StatelessWidget {
           ButtonRow([
             Button.big(
               text: 'AC',
+              color: Button.DARK,
               cb: cb,
             ),
             Button(
               text: '%',
+              color: Button.DARK,
               cb: cb,
             ),
             Button.operation(
