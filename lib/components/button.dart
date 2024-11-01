@@ -37,8 +37,9 @@ class Button extends StatelessWidget {
         flex: big ? 2 : 1,
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: color,
-            ),
+                backgroundColor: color,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10))),
             onPressed: () => cb(text),
             child: Text(
               text,
