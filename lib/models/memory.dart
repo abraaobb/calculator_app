@@ -65,7 +65,6 @@ class Memory {
     _wipeValue = false;
 
     _buffer[_bufferIndex] = double.tryParse(_value) ?? 0;
-    print(_buffer);
   }
 
   _allClear() {
